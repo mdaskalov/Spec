@@ -1,0 +1,254 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Englisch (USA) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 91
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Spec"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Spectrum Analyzer Version 2.05",IDC_STATIC,36,7,129,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 1996-2002 by Mike Daskaloff",IDC_STATIC,36,16,149,8
+    DEFPUSHBUTTON   "OK",IDOK,194,7,34,16,WS_GROUP
+    ICON            IDI_SPECICO,IDC_STATIC,7,28,20,20
+    LTEXT           "This program is distributed as FREEWARE, so if you like it or if you have any suggestions please drop me a line.",IDC_STATIC,36,34,161,26
+    LTEXT           "innersoft@aon.at",IDC_STATIC,103,62,110,9
+    LTEXT           "http://members.aon.at/innersoft",IDC_STATIC,103,72,120,8
+END
+
+IDD_SPEC_DIALOG DIALOGEX 0, 0, 315, 170
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Spectrum Analyser"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_WAVE,"Static",SS_BLACKRECT | SS_SUNKEN,10,15,101,42
+    CONTROL         "",IDC_SPEC,"Static",SS_BLACKRECT | SS_SUNKEN,10,80,295,80
+    GROUPBOX        "Sound Wave",IDC_STATIC,5,5,111,57
+    GROUPBOX        "Sound Spectrum",IDC_STATIC,5,70,305,95
+    CONTROL         "",IDC_PEAK,"msctls_trackbar32",TBS_VERT | TBS_BOTH | TBS_NOTICKS,121,15,14,42,WS_EX_STATICEDGE
+    GROUPBOX        "Source",IDC_STATIC,156,5,51,41
+    CONTROL         "",IDC_BAR,"msctls_trackbar32",TBS_VERT | TBS_BOTH | TBS_NOTICKS,136,15,14,42,WS_EX_STATICEDGE,HIDC_BAR
+    CONTROL         "Audio",IDC_RB_RECORD,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,161,15,34,10
+    CONTROL         "",IDC_PROGRESS,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_DISABLED | WS_TABSTOP,156,49,149,13,WS_EX_STATICEDGE
+    CONTROL         "Test",IDC_RB_TEST,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,161,29,30,10
+    PUSHBUTTON      "Start / Stop",IDC_STARTSTOP,255,5,50,14
+    PUSHBUTTON      "3D View",IDC_3D,255,19,50,14
+    CTEXT           "Pck",IDC_STATIC,120,57,15,8,WS_DISABLED
+    CTEXT           "Bar",IDC_STATIC,135,57,15,8,WS_DISABLED
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,5
+ PRODUCTVERSION 2,0,0,5
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "Windows Spectrum Analyzer"
+            VALUE "CompanyName", "InnerSoft, Inc."
+            VALUE "FileDescription", "SPEC"
+            VALUE "FileVersion", "2.0.0.5"
+            VALUE "InternalName", "Spec.exe"
+            VALUE "LegalCopyright", "Copyright (c) 1996-2002 by Mike Daskaloff.  All rights reserved."
+            VALUE "LegalTrademarks", "This program is freeware."
+            VALUE "OriginalFilename", "Spec.exe"
+            VALUE "ProductName", "Win Spec"
+            VALUE "ProductVersion", "2.0.0.5"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        VERTGUIDE, 36
+        VERTGUIDE, 103
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 84
+    END
+
+    IDD_SPEC_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 310
+        VERTGUIDE, 10
+        VERTGUIDE, 305
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 165
+        HORZGUIDE, 15
+        HORZGUIDE, 57
+        HORZGUIDE, 62
+        HORZGUIDE, 80
+        HORZGUIDE, 160
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RCDATA
+//
+
+IDR_STABLE              RCDATA                  "res\\stable.bin"
+
+IDR_SQRTABLE            RCDATA                  "res\\sqrtable.bin"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_SPECICO             ICON                    "res\\Spec.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About WinSpec..."
+    IDS_NO_SINE_TABLE       "Cannot load the FFT table!"
+    IDS_NO_SQRT_TABLE       "Cannot load the SQRT table!"
+    IDS_NOMEMORY            "Not enough memory for sound sampling!"
+    IDS_BADDEVICE           "There is no sound sampling device available!"
+    IDS_DEVINUSE            "The sound sampling device is currently in use!"
+    IDS_BADFORMAT           "The sampling format is not supported!"
+    IDS_OPENDEVERR          "Error opening the sound sampling device!"
+    IDS_THREADERR           "Error creating read thread!"
+END
+
+#endif    // Englisch (USA) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Deutsch (Österreich) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEA)
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN_AUSTRIAN
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Spec.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Deutsch (Österreich) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\Spec.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

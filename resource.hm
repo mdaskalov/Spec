@@ -1,0 +1,4 @@
+// Microsoft Visual C++ generated Help ID include file.
+// Used by Spec.rc
+//
+#define HIDC_BAR                        0x806603ed    // IDD_SPEC_DIALOG [English (U.S.)]
