@@ -1,7 +1,7 @@
 //////////////////////////////////////////////////////////////////////
 // Settings and configurations
 
-#define	MAXSPEC		    54
+#define	MAXSPEC		    72
 #define	MAXWAVE		    147
 #define NUM_BUFFERS   4
 
@@ -15,7 +15,7 @@
 #define _SPECBAR	RGB(255,255,0)
 #define _SPECPCK	RGB(255,0,0)
 #define _SPECBLK  RGB(0,0,0)
-#define GAIN      1800
+#define GAIN      1300
 
 #define _WAVEBKG	RGB(63,63,63)
 #define _WAVEDAT	RGB(255,255,255)

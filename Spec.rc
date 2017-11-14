@@ -39,8 +39,8 @@ BEGIN
     DEFPUSHBUTTON   "OK",IDOK,194,7,34,16,WS_GROUP
     ICON            IDI_SPECICO,IDC_STATIC,7,28,20,20
     LTEXT           "This program is distributed as FREEWARE, so if you like it or if you have any suggestions please drop me a line.",IDC_STATIC,36,34,161,26
-    LTEXT           "innersoft@aon.at",IDC_STATIC,103,62,110,9
-    LTEXT           "http://members.aon.at/innersoft",IDC_STATIC,103,72,120,8
+    LTEXT           "mdaskalov@outlook.com",IDC_STATIC,103,62,110,9
+    LTEXT           "https://github.com/mdaskalov/Spec",IDC_STATIC,103,72,120,8
 END
 
 IDD_SPEC_DIALOG DIALOGEX 0, 0, 315, 170
@@ -89,11 +89,10 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "Comments", "Windows Spectrum Analyzer"
-            VALUE "CompanyName", "InnerSoft, Inc."
             VALUE "FileDescription", "SPEC"
             VALUE "FileVersion", "2.0.0.5"
             VALUE "InternalName", "Spec.exe"
-            VALUE "LegalCopyright", "Copyright (c) 1996-2002 by Mike Daskaloff.  All rights reserved."
+            VALUE "LegalCopyright", "Copyright (c) 1996-2002 by Milko Daskalov.  All rights reserved."
             VALUE "LegalTrademarks", "This program is freeware."
             VALUE "OriginalFilename", "Spec.exe"
             VALUE "ProductName", "Win Spec"
@@ -161,6 +160,22 @@ IDR_SQRTABLE            RCDATA                  "res\\sqrtable.bin"
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
 IDI_SPECICO             ICON                    "res\\Spec.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_SPEC_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
 
 
 /////////////////////////////////////////////////////////////////////////////

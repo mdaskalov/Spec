@@ -68,9 +68,6 @@
     <None Include="res\Spec.rc2">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="res\data1.bin">
-      <Filter>Resource Files</Filter>
-    </None>
     <None Include="res\sqrtable.bin">
       <Filter>Resource Files</Filter>
     </None>
@@ -82,6 +79,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
+    <Text Include="README.md" />
   </ItemGroup>
 </Project>

@@ -18,7 +18,7 @@ protected:
 	CDC*       m_SpecWinDC;
   CRect      m_rect;
 
-	short int* m_STAB; 
+	short int m_STAB[(MAXSPEC + 1)*MAXWAVE];
 	PBYTE	     m_SQRTAB;
 	HGLOBAL		 m_hSTable;
 	HGLOBAL 	 m_hSQTable;
@@ -32,7 +32,8 @@ protected:
   int        BARSTART;
 
 public:
-  CSpecWin();
+	CSpecWin();
+	void CalcSpec();
 	void InitSpec();
 	void DrawSpec();
 	void ClearSpec();
