@@ -9,27 +9,27 @@
 class CWaveWin : public CStatic
 {
 	friend class CSpecDlg;
-// Construction
+	// Construction
 public:
 	CWaveWin();
 
-// Attributes
+	// Attributes
 protected:
 	CDC*    m_WaveWinDC;
-	int     m_oWave[MAXWAVE+1];
+	int     m_oWave[MAXWAVE + 1];
 	int     m_cWaveY[256];
-// Operations
+	// Operations
 public:
 	void InitWave();
 	void DrawWave();
 	void ClearWave();
 	void GenerateWave(double x);
-// Overrides
-	// ClassWizard generated virtual function overrides
-	//{{AFX_VIRTUAL(CWaveWin)
-	//}}AFX_VIRTUAL
+	// Overrides
+		// ClassWizard generated virtual function overrides
+		//{{AFX_VIRTUAL(CWaveWin)
+		//}}AFX_VIRTUAL
 
-// Implementation
+	// Implementation
 public:
 	virtual ~CWaveWin();
 

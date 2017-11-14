@@ -8,14 +8,14 @@
 // CSpecDlg dialog
 class CSpecDlg : public CDialog
 {
-// Construction
+	// Construction
 public:
 	CSpecDlg(CWnd* pParent = NULL);	// standard constructor
 
 // Dialog Data
 	enum { IDD = IDD_SPEC_DIALOG };
 
-  protected:
+protected:
 	virtual void DoDataExchange(CDataExchange* pDX);	// DDX/DDV support
 
 
@@ -30,19 +30,19 @@ protected:
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
 public:
-  virtual BOOL DestroyWindow();
-  CSliderCtrl m_BarTime;
-  CSliderCtrl m_PeakTime;
-  afx_msg void OnVScroll(UINT nSBCode, UINT nPos, CScrollBar* pScrollBar);
-  afx_msg void OnClose();
-  afx_msg void OnDestroy();
-  CSliderCtrl m_Progress;
-  afx_msg void OnHScroll(UINT nSBCode, UINT nPos, CScrollBar* pScrollBar);
-  afx_msg void OnBnClickedStart();
-  afx_msg void OnBnClickedStop();
-  afx_msg void OnBnClicked3d();
-  afx_msg void OnBnClickedRbRecord();
-  afx_msg void OnBnClickedRbTest();
-  afx_msg void OnMove(int x, int y);
-  afx_msg void OnBnClickedStartstop();
+	virtual BOOL DestroyWindow();
+	CSliderCtrl m_BarTime;
+	CSliderCtrl m_PeakTime;
+	afx_msg void OnVScroll(UINT nSBCode, UINT nPos, CScrollBar* pScrollBar);
+	afx_msg void OnClose();
+	afx_msg void OnDestroy();
+	CSliderCtrl m_Progress;
+	afx_msg void OnHScroll(UINT nSBCode, UINT nPos, CScrollBar* pScrollBar);
+	afx_msg void OnBnClickedStart();
+	afx_msg void OnBnClickedStop();
+	afx_msg void OnBnClicked3d();
+	afx_msg void OnBnClickedRbRecord();
+	afx_msg void OnBnClickedRbTest();
+	afx_msg void OnMove(int x, int y);
+	afx_msg void OnBnClickedStartstop();
 };
