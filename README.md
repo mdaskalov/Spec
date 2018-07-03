@@ -1,5 +1,5 @@
 # Spec
-Spectrum Analyzer for Windows using precalculated tables and direct sound. 
+Real time spectrum analyzer for Windows using precalculated fast fourier transformation (FFT) tables and direct sound. Featuring pseudo 3D viev, peak visualisation and test mode with simulated sine wave.
 
 Native win32 code written about 1996 using visual studio. 
 
